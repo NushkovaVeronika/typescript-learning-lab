@@ -18,7 +18,7 @@ employee = [
     [2, 'Marija'],
 ];
 // Union
-let pid = 22; //could be a string or a number
+let pid = 22; // could be a string or a number
 // Enum 
 var Direction1;
 (function (Direction1) {
@@ -54,4 +54,20 @@ function log(message) {
 }
 log(2);
 log('hello');
+const user1 = {
+    id: 1,
+    name: 'John'
+};
+const p1 = 1;
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+// Classes
+class Person {
+    // id: number
+    // name: string
+    constructor() {
+        console.log(123);
+    }
+}
+const brad = new Person();
 //# sourceMappingURL=index.js.map
