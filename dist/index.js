@@ -75,6 +75,8 @@ class Person {
 }
 const brad = new Person(1, 'Brad');
 const mike = new Person(2, 'Mike');
+// Subclassses
+// Employee class is a subclass
 class Employee extends Person {
     position;
     constructor(id, name, position) {
@@ -86,4 +88,13 @@ const emp = new Employee(3, 'Shawn', 'QA Engineer');
 console.log(emp.register());
 console.log(brad.register());
 console.log(brad, mike);
+// Generics
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(['Brad', 'John', 'Jill']);
+strArray.push('hello');
+numArray.push(1);
+console.log(strArray[0]);
 //# sourceMappingURL=index.js.map
